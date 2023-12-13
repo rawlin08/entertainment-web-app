@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     <svg class="searchicon"><use href="#icon-search"></use></svg>
     <input type="search" name="search" id="search" placeholder="Search for movies or TV series">
   </div>
+  <app-recommended></app-recommended>
   `,
   styles: [`
   .searchicon {
