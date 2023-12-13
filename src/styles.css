@@ -5,6 +5,7 @@
     --greyish-blue: #5A698F;
     --semi-dark-blue: #161D2F;
     --white: #FFFFFF;
+    --card-width-small: 164px;
 }
 body {
     margin: 0;
@@ -49,6 +50,26 @@ app-nav-bar {
     justify-content: space-between;
 }
 
+.bookmarkicon {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(16, 20, 30, 0.3);
+}
+
+h2 {
+    font-weight: 300;
+    letter-spacing: -0.312px;
+    font-size: 20px;
+    margin: 0 0 24px 0;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* SEARCH STYLES */
 .searchContainer {
     display: flex;
     gap: 16px;
@@ -75,3 +96,30 @@ app-nav-bar {
     border-bottom: 1px solid var(--greyish-blue);
     outline: none;
 }
+
+/* ALL CARD STYLES */
+.card .details {
+    display: flex;
+    gap: 6px;
+    color: var(--white);
+    opacity: 0.75;
+    margin: 8px 0 4px 0;
+}
+
+/* REGULAR CARD STYLES */
+.regularcards {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, var(--card-width-small));
+    gap: 15px;
+}
+.regularcard {
+    width: 164px;
+}
+.regularcard img {
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+}
+
+/* LARGE CARD STYLES */
