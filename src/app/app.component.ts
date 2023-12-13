@@ -15,7 +15,9 @@ export class AppComponent implements OnInit {
       localStorage.setItem('entertainment', JSON.stringify(entertainment.entertainment));
       this.data = entertainment.entertainment;
     }
+    this.trending = this.data.filter((element:any) => element.isTrending == true);
   }
 
   data:any;
+  trending:any;
 }
