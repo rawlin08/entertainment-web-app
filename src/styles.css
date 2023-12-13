@@ -35,3 +35,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+app-home {
+    display: block;
+}
+app-nav-bar {
+    display: flex;
+    background-color: var(--semi-dark-blue);
+    padding: 18px 16px;
+    align-items: center;
+    justify-content: space-between;
+}
