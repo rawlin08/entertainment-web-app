@@ -37,7 +37,9 @@ a {
 }
 
 app-home {
-    display: block;
+    display: grid;
+    padding: 24px 16px;
+    gap: 24px;
 }
 app-nav-bar {
     display: flex;
@@ -45,4 +47,31 @@ app-nav-bar {
     padding: 18px 16px;
     align-items: center;
     justify-content: space-between;
+}
+
+.searchContainer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.searchicon {
+    padding: 0 0 15px 0;
+}
+#search {
+    width: 100%;
+    background-color: transparent;
+    padding: 0 0 15px 0;
+    border: none;
+    font-size: 24px;
+    border-bottom: none;
+    font-weight: 300;
+    font-family: 'Outfit';
+    color: var(--white);
+}
+#search::placeholder {
+    color: var(--white);
+}
+#search:focus {
+    border-bottom: 1px solid var(--greyish-blue);
+    outline: none;
 }
