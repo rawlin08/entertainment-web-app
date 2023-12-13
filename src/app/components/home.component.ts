@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
     <svg class="searchicon"><use href="#icon-search"></use></svg>
     <input type="search" name="search" id="search" placeholder="Search for movies or TV series">
   </div>
+  <app-trending></app-trending>
   <app-recommended></app-recommended>
   `,
   styles: [`
   .searchicon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     color: var(--white);
   }
   `]
