@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
     color: var(--white);
     background-color: var(--dark-blue);
-    position: relative;
 }
 html {
     font-family: 'Outfit', sans-serif;
@@ -57,6 +56,10 @@ app-nav-bar {
     border-radius: 50%;
     background-color: rgba(16, 20, 30, 0.3);
 }
+.detailsicon {
+    width: 10px;
+    height: 10px;
+}
 
 h2 {
     font-weight: 300;
@@ -83,7 +86,7 @@ h3 {
     background-color: transparent;
     padding: 0 0 15px 0;
     border: none;
-    font-size: 24px;
+    font-size: 16px;
     border-bottom: none;
     font-weight: 300;
     font-family: 'Outfit';
@@ -100,10 +103,26 @@ h3 {
 /* ALL CARD STYLES */
 .card .details {
     display: flex;
+    align-items: center;
     gap: 6px;
+    font-size: 11px;
+    font-weight: 300;
     color: var(--white);
     opacity: 0.75;
     margin: 8px 0 4px 0;
+}
+.card .image {
+    position: relative;
+}
+.card .image > svg {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.category {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 /* REGULAR CARD STYLES */
