@@ -10,6 +10,11 @@ import { TvShowsComponent } from './components/tv-shows.component';
 import { BookmarkedComponent } from './components/bookmarked.component';
 import { TrendingComponent } from './components/trending.component';
 import { RecommendedComponent } from './components/recommended.component';
+import { AllMoviesComponent } from './components/all-movies.component';
+import { AllTvShowsComponent } from './components/all-tv-shows.component';
+import { AllBookmarksComponent } from './components/all-bookmarks.component';
+import { BookmarkedTVComponent } from './components/bookmarked-tv.component';
+import { BookmarkedMoviesComponent } from './components/bookmarked-movies.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { RecommendedComponent } from './components/recommended.component';
     TvShowsComponent,
     BookmarkedComponent,
     TrendingComponent,
-    RecommendedComponent
+    RecommendedComponent,
+    AllMoviesComponent,
+    AllTvShowsComponent,
+    AllBookmarksComponent,
+    BookmarkedTVComponent,
+    BookmarkedMoviesComponent
   ],
   imports: [
     BrowserModule,
