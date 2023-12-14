@@ -36,7 +36,7 @@ a {
     color: inherit;
 }
 
-app-home {
+app-home, app-movies, app-tv-shows, app-bookmarked {
     display: grid;
     padding: 24px 16px;
     gap: 24px;
@@ -59,6 +59,11 @@ app-nav-bar {
 .detailsicon {
     width: 10px;
     height: 10px;
+}
+.searchicon {
+    width: 24px;
+    height: 24px;
+    color: var(--white);
 }
 
 h2 {
