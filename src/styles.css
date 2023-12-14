@@ -36,7 +36,15 @@ a {
     color: inherit;
 }
 
-app-home, app-movies, app-tv-shows, app-bookmarked {
+app-home {
+    display: grid;
+    gap: 24px;
+}
+app-recommended {
+    padding: 0 16px;
+}
+
+app-movies, app-tv-shows, app-bookmarked {
     display: grid;
     padding: 24px 16px;
     gap: 24px;
@@ -144,6 +152,22 @@ h3 {
     width: 100%;
     height: 110px;
     border-radius: 8px;
+}
+
+.trending-cards {
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    max-width: calc(100vw - 32px);
+    padding: 0 16px;
+}
+.trending-card {
+    width: 240px;
+}
+.trending-card img {
+    width: 240px;
+    height: 140px;
+    border-radius: 8px;;
 }
 
 /* LARGE CARD STYLES */
