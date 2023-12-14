@@ -28,7 +28,7 @@ import { BookmarkedMoviesComponent } from './components/bookmarked-movies.compon
     AllMoviesComponent,
     AllTvShowsComponent,
     BookmarkedTVComponent,
-    BookmarkedMoviesComponent
+    BookmarkedMoviesComponent,
   ],
   imports: [
     BrowserModule,
