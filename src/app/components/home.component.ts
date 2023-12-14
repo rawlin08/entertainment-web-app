@@ -10,13 +10,7 @@ import { Component } from '@angular/core';
   <app-trending></app-trending>
   <app-recommended></app-recommended>
   `,
-  styles: [`
-  .searchicon {
-    width: 24px;
-    height: 24px;
-    color: var(--white);
-  }
-  `]
+  styles: [``]
 })
 export class HomeComponent {
 
