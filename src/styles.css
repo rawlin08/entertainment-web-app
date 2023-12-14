@@ -114,7 +114,7 @@ h3 {
 }
 
 /* ALL CARD STYLES */
-.card .details {
+.card .details > .top, .trending-card .details > .top {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -124,10 +124,10 @@ h3 {
     opacity: 0.75;
     margin: 8px 0 4px 0;
 }
-.card .image {
+.card .image, .trending-card .image {
     position: relative;
 }
-.card .image > svg {
+.card .image > svg, .trending-card .image > svg {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -159,7 +159,7 @@ h3 {
     gap: 16px;
     overflow: scroll;
     max-width: calc(100vw - 32px);
-    padding: 0 16px;
+    padding: 0 16px 5px 16px;
 }
 .trending-card {
     width: 240px;
@@ -168,6 +168,10 @@ h3 {
     width: 240px;
     height: 140px;
     border-radius: 8px;;
+}
+.trending-card .details {
+    position: absolute;
+    bottom: 0;
 }
 
 /* LARGE CARD STYLES */
