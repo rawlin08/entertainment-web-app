@@ -5,8 +5,8 @@ import { AppComponent } from '../app.component';
   selector: 'app-trending',
   template: `
   <h2>Trending</h2>
-  <div class="regularcards">
-    <div class="regularcard card" *ngFor="let card of app.trending">
+  <div class="trending-cards">
+    <div class="trending-card card" *ngFor="let card of app.trending">
       <div class="image">
         <img [src]="card.thumbnail.regular.small" alt="">
         <svg class="bookmarkicon"><use attr.href="{{ card.isBookmarked == true ? '#icon-bookmark-full' : '#icon-bookmark-empty' }}"></use></svg>
@@ -25,7 +25,11 @@ import { AppComponent } from '../app.component';
     </div>
   </div>
   `,
-  styles: [``]
+  styles: [`
+  h2 {
+    padding: 0 16px;
+  }
+  `]
 })
 export class TrendingComponent {
   constructor(public app: AppComponent) {}
